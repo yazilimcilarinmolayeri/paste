@@ -12,7 +12,7 @@
 
     <!-- tailwindcss -->
     <link rel="stylesheet" href="tailwind.css">
-    
+
 </head>
 
 <body class="transition duration-150 ease-in-out dark:bg-gray-700">
@@ -134,7 +134,8 @@
         <div class="sm:hidden" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                <a href="#"
+                    class="bg-gray-800 hover:bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                     aria-current="page">Dashboard</a>
 
                 <a href="#"
@@ -150,28 +151,68 @@
     </nav>
 
     <!-- Section /create-paste -->
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="transition duration-150 ease-in-out bg-white dark:bg-gray-700">
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="block">Ready to dive in?</span>
-        <span class="block text-indigo-600 dark:text-white transition duration-150 ease-in-out">Start your free trial today.</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <div class="inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
-            Get started
-          </a>
+
+    <div class="container mx-auto mt-10">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900 dark:text-white">Yeni paste</h3>
+                    <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">
+                        Oluşturmak istediğiniz yeni paste ile alakalı bilgiler
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+                <form action="#" method="POST">
+                    <div class="shadow sm:rounded-md sm:overflow-hidden">
+                        <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                            <div class="grid grid-cols-3 gap-6">
+                                <div class="col-span-3 sm:col-span-2">
+                                    <label for="company-website" class="block text-sm font-medium text-gray-700">
+                                        Paste Başlığı
+                                    </label>
+                                    <div class="mt-1 flex rounded-md shadow-sm">
+                                        <input type="text" name="company-website" id="company-website"
+                                            class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-md sm:text-sm border-gray-300"
+                                            placeholder="Yeni paste">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="about" class="block text-sm font-medium text-gray-700">
+                                    Paste İçeriği
+                                </label>
+                                <div class="mt-1">
+                                    <textarea id="about" name="about" rows="5"
+                                        class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                                        placeholder="console.log('Hello world!');"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="country" class="block text-sm font-medium text-gray-700">Zaman aşımı</label>
+                                <select id="country" name="country" autocomplete="country"
+                                    class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                    <option>Zaman aşımı olmasın</option>
+                                    <option>Okuduktan sonra sil</option>
+                                    <option>1 saat sonra</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button type="submit"
+                                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Oluştur
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="ml-3 inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
-            Learn more
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
-  
+
     <!-- End Section /create-paste -->
 
 
