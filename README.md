@@ -1,1 +1,3 @@
-# ymy-paste
+# paste
+
+Simple paste service
